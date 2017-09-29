@@ -322,21 +322,24 @@ h1, h2, h3, h4, h5 {
   color: #fff;
 }
 
+#hideoverflow {
+  overflow: hidden;
+}
+
 #navigation {
-  margin: 40px auto 0;
-  text-align: center;
-  width: 300px;
+  margin: 20px auto;
 }
 
 #navigation ul {
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 #navigation ul li {
   display: inline-block;
   float: left;
   text-align: center;
-  margin: 0 5px;
+  margin: 0 10px 15px 0;
 }
 
 #navigation ul li a {
@@ -807,6 +810,14 @@ Media Queries
   /* ==========================================================================
   WIDE: Author's custom styles
   ========================================================================== */
+
+  #navigation {
+    position: relative; left: 50%; float: left;
+  }
+
+  #navigation ul {
+    position: relative; left: -50%; float: left;
+  }
 
   .main article header, .main article section {
     padding: 18px 30px;
