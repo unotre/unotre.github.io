@@ -174,42 +174,6 @@ ALL: IE Fixes
   padding-top: 20px;
 }
 
-/* Fix per SVG responsivi */
-
-.svgout {
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-  position: relative;
-}
-
-.svgratio1 { /* Da usare con SVG con ratio 900x700 */
-  padding-bottom: 77.77%;
-}
-
-.svgratio2 { /* Da usare con SVG con ratio 800x600 */
-  padding-bottom: 75%;
-}
-
-.svgratio3 { /* Da usare con SVG con ratio 1400x700 */
-  padding-bottom: 50%;
-}
-
-.svgratio4 { /* Da usare con SVG con ratio 1400x400 */
-  padding-bottom: 28.57%;
-}
-
-.svgratio5 { /* Da usare con SVG con ratio 800x800 */
-  padding-bottom: 100%;
-}
-
-.svgin, .svgin svg {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 /* ==========================================================================
 MOBILE: Author's custom styles
 ========================================================================== */
@@ -830,7 +794,7 @@ Media Queries
   .main article {
     /*float: left;*/
     display: inline-block;
-    width: 50%;
+    width: 40%;
     text-align: left;
   }
 
