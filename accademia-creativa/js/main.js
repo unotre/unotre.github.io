@@ -36,6 +36,7 @@ function enable_cb() {
 
 function form_submitted(param) {
   console.log("Ciao corradinnnnyyy: " + param);
-  if (param == "form_submitted" )
-  $("#step3").removeClass("disabled");
+  if (param == "form_submitted" ) {
+    $("#step3").removeClass("disabled");
+  }
 }
