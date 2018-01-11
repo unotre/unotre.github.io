@@ -17,6 +17,11 @@ $(document).ready(function(){
   enable_cb();
   $("#relatore").click(enable_cb);
 
+  window.addEventListener("message", function(event) {
+    console.log("Hello from " + event.data);
+    form_submitted(event.data);
+  });
+
 });
 
 function enable_cb() {
@@ -27,4 +32,8 @@ function enable_cb() {
     $("#step2").addClass("disabled");
     $("#formpartecipa").addClass("hidden");
   }
+}
+
+function form_submitted(param) {
+  console.log("Ciao corradinnnnyyy: " + param);
 }
