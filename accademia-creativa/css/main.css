@@ -87,9 +87,10 @@ body {
 
 h1, h2, h3, h4, h5 {
   letter-spacing: normal;
-  font-family: 'Teko', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 1000;
+  letter-spacing: -0.02em;
+  line-height: 100%;
 }
 
 .wrapper {
@@ -295,7 +296,7 @@ MOBILE: Author's custom styles
 /* Contenuti */
 
 body {
-  background: #fff;
+  background: #FDE33F;
   color: #000;
 }
 
@@ -304,18 +305,22 @@ html {
 
 a {
   text-decoration: underline;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 
 .main-container {
   overflow: hidden;
+  padding-top: 120px;
 }
 
 ol, ul {
   margin: 0;
-  padding: 0;
-  list-style-type: none;
+  padding: 0 0 0 25px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -343,7 +348,6 @@ h1, h2, h3, h4, h5 {
 }
 
 #navigation ul li a {
-  font-family: "Teko";
   text-decoration: none;
   text-transform: uppercase;
   background: #fff;
@@ -360,7 +364,7 @@ h1, h2, h3, h4, h5 {
 #content {
   clear: both;
   position: relative;
-  padding: 2vh 0;
+  padding: 10vh 0 2vh;
 }
 
 .layer {
@@ -375,22 +379,16 @@ h1, h2, h3, h4, h5 {
 .main h2 {
   margin-top: 20px;
   font-size: 2.8em;
-  line-height: 1.2em;
-  text-align: center;
 }
 
-.title-el {
-
+.main h3 {
+  font-size: 2em;
+  line-height: 110%;
 }
 
-#title {
-  margin: 30px 0 0 0;
-  padding: 0;
-  text-align: center;
-}
-
-#title img {
-
+.main h5 {
+  font-size: 1.3em;
+  line-height: 120%;
 }
 
 .main form input, .main form select {
@@ -409,8 +407,81 @@ h1, h2, h3, h4, h5 {
 
 }
 
-.main article .cta {
+.main article#cta {
+  margin-top: 40px;
+  border: 4px solid black;
+  background: white;
+}
 
+.main article#cta h5, .main article#cta h3 {
+  margin: 10px 0;
+}
+
+.main article#cta #formpartecipa {
+  margin-left: -15px;
+}
+
+
+.main article#cta .disabled {
+  opacity: 0.3;
+}
+
+.main article#cta .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 2px;
+  margin: 10px 0 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main article#cta .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.main article#cta .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.main article#cta .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.main article#cta .container input:checked ~ .checkmark {
+  background-color: #eb1c23;
+}
+
+.main article#cta .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main article#cta .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.main article#cta .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 h5.subtitle {
@@ -526,7 +597,6 @@ h1 {
 h1.entry-title {
   font-size: 24px;
   margin: 0;
-  float: left;
   text-align: center;
 }
 h1.entry-title a {
@@ -537,49 +607,24 @@ h1.entry-title a {
 
 .entry-title .logo-unotre {
   background: url('../img/logo-unotre-2x.png') no-repeat;
-  width: 60px;
-  height: 25px;
-  background-size: 60px auto;
+  width: 100px;
+  height: 100px;
+  background-size: 100px auto;
   background-position: 0 4px;
 }
-.entry-title .sep {
-  background: url('../img/sep-2x.png') no-repeat center 3px;
-  width: 7px;
-  height: 22px;
-  background-size: 5px auto;
-}
-.entry-title .logo {
+.entry-title a.logo-unotre {
   display: inline-block;
-  width: 135px;
-  height: 25px;
-  background-size: 135px auto;
-  background-position: 0 7px;
-}
-.entry-title a.logo-unotre, .entry-title .logo,
-.entry-title span,
-.nav-facebook a, .nav-twitter a {
-  display: inline-block;
-  text-align: left;
+  text-align: center;
   text-indent: -9999px;
   overflow: hidden;
   margin-right: 3px;
   margin-top: 0;
 }
-.nav-facebook a {
-  background: url('../img/icon-facebook.png') no-repeat center center;
-  width: 20px;
-  height: 27px;
-}
-.nav-twitter a {
-  background: url('../img/icon-twitter.png') no-repeat center center;
-  width: 20px;
-  height: 27px;
-}
 .entry-header .inner {
-  text-align: left;
-  margin: 10px auto;
+  text-align: center;
+  margin: 20px auto;
   width: 95%;
-  height: 27px;
+  height: 75px;
 }
 .entry-header {
   background: #000;
@@ -662,15 +707,9 @@ Media Queries
   .entry-title .logo-unotre {
     background: url('../img/logo-unotre-2x.png') no-repeat;
     width: 75px;
-    height: 25px;
+    height: 75px;
     background-size: 75px auto;
-    background-position: 0 2px;
-  }
-  .entry-title .sep {
-    background: url('../img/sep-2x.png') no-repeat center 0px;
-    width: 7px;
-    height: 22px;
-    background-size: 7px auto;
+    background-position: 0 0;
   }
 
 }
@@ -727,10 +766,6 @@ Media Queries
   /* ==========================================================================
   INTERMEDIATE: Author's custom styles
   ========================================================================== */
-
-  .main h2 {
-    font-size: 3em;
-  }
 
   .arrow-wrap {
     width:3vw;
@@ -798,7 +833,7 @@ Media Queries
   .main article {
     /*float: left;*/
     display: inline-block;
-    width: 40%;
+    width: 60%;
     text-align: left;
   }
 
@@ -811,6 +846,10 @@ Media Queries
   /* ==========================================================================
   WIDE: Author's custom styles
   ========================================================================== */
+
+  .main h2 {
+    font-size: 4em;
+  }
 
   #navigation {
     position: relative; left: 50%; float: left;
@@ -844,18 +883,15 @@ Media Queries
     font-size: 2.5em;
   }
 
-  .entry-title .logo-unotre {
-    width: 120px;
-    height: 25px;
-    background-size: 120px auto;
-    background-position: 0 -5px;
+  .entry-header .inner {
+    height: 120px;
   }
 
-  .entry-title .logo {
-    width: 250px;
-    height: 25px;
-    background-size: 250px auto;
-    background-position: 0 2px;
+  .entry-title .logo-unotre {
+    width: 120px;
+    height: 120px;
+    background-size: 120px auto;
+    background-position: 0 0;
   }
 
   .slideshow .slideshow-element-outer {
@@ -891,6 +927,11 @@ Media Queries
   body {
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  .main article {
+    width: 50%;
+    max-width: 768px;
   }
 
   .main article p {
