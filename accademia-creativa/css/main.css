@@ -1,0 +1,1038 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #ccc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ccc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.browserupgrade {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  padding: 0;
+  z-index: 999999999;
+}
+
+.browserupgrade div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.browserupgrade div p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.no-csstransforms3d .browserupgrade {
+  display: table;
+}
+
+
+/* ===== Initializr Styles ==================================================
+Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+========================================================================== */
+
+body {
+  /*font: 16px/26px Helvetica, Helvetica Neue, Arial;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px/26px;
+  font-weight: light;
+  letter-spacing: 0.03em;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: normal;
+  font-family: 'Teko', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+/* ==============
+MOBILE: Menu
+============== */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+
+  color: white;
+  background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============
+MOBILE: Main
+============== */
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+  padding: 0;
+}
+
+.main article {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.main article p {
+  font-size: 1em;
+}
+
+.main article h1 {
+  font-size: 1em;
+}
+
+.main aside {
+  background: #000;
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+
+/* ===============
+ALL: IE Fixes
+=============== */
+
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+MOBILE: Author's custom styles
+========================================================================== */
+
+/* Cose per i plugin JavaScript */
+
+/* Headroom.js */
+
+.animated {
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    will-change: transform, opacity
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%)
+    }
+
+    100% {
+        -webkit-transform: translateY(0)
+    }
+}
+
+@-moz-keyframes slideDown {
+    0% {
+        -moz-transform: translateY(-100%)
+    }
+
+    100% {
+        -moz-transform: translateY(0)
+    }
+}
+
+@-o-keyframes slideDown {
+    0% {
+        -o-transform: translateY(-100%)
+    }
+
+    100% {
+        -o-transform: translateY(0)
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.animated.slideDown {
+    -webkit-animation-name: slideDown;
+    -moz-animation-name: slideDown;
+    -o-animation-name: slideDown;
+    animation-name: slideDown
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(-100%)
+    }
+}
+
+@-moz-keyframes slideUp {
+    0% {
+        -moz-transform: translateY(0)
+    }
+
+    100% {
+        -moz-transform: translateY(-100%)
+    }
+}
+
+@-o-keyframes slideUp {
+    0% {
+        -o-transform: translateY(0)
+    }
+
+    100% {
+        -o-transform: translateY(-100%)
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+.animated.slideUp {
+    -webkit-animation-name: slideUp;
+    -moz-animation-name: slideUp;
+    -o-animation-name: slideUp;
+    animation-name: slideUp
+}
+
+/* Hack per Safari <= 7 */
+
+.reveal { (;visibility: visible;); }
+
+/* Contenuti */
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+html {
+}
+
+a {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #000;
+}
+
+#hideoverflow {
+  overflow: hidden;
+}
+
+#navigation {
+  margin: 20px auto;
+}
+
+#navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin: 0 10px 15px 0;
+}
+
+#navigation ul li a {
+  font-family: "Teko";
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
+  padding: 3px 10px 0;
+  font-size: 1.3em;
+}
+
+#navigation ul li a.selected {
+  background: #666;
+}
+
+#content {
+  clear: both;
+  position: relative;
+  padding: 2vh 0;
+}
+
+.layer {
+}
+
+.layer div, .layer div img {
+}
+
+.main h1 {
+}
+
+.main h2 {
+  margin-top: 20px;
+  font-size: 2.8em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.title-el {
+
+}
+
+#title {
+  margin: 30px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+#title img {
+
+}
+
+.main form input, .main form select {
+  width: 100%;
+}
+
+.main form select {
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.main article section {
+
+}
+
+.main article .cta {
+
+}
+
+h5.subtitle {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+header.black h1 {
+  color: #fff;
+}
+
+.slideshow {
+  margin-bottom: 0 !important;
+}
+
+.slideshow .slideshow-element-outer {
+  width: 100%;
+  max-width: 290px;
+  margin: 20px 10px;
+}
+
+.slideshow .slideshow-element-image {
+  position: relative;
+  padding-bottom: 75%;
+	height: 0;
+  overflow: hidden;
+}
+
+.slideshow .slideshow-element-image iframe {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.slideshow .slideshow-element-image img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height:100%;
+  min-width:100%;
+}
+
+.slideshow .slideshow-element-text {
+  text-align: left;
+  margin: 10px;
+}
+
+.slideshow .slideshow-element-text h2 {
+  font-size: 19px;
+}
+
+.white {
+  background: #fff;
+}
+
+header.black.big,  header.black {
+  position:absolute;
+  left:0; right:0; top: 0; bottom: 0;
+  margin:auto;
+}
+
+header.black.big {
+  width: 220px;
+  font-size: 1.5em;
+  height: 60px;
+}
+
+header.black {
+  width: 250px;
+  height: 140px;
+}
+
+article header, article section {
+  padding: 10px 15px 5px;
+  margin: 0;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.dida {
+  color: #aaa;
+  padding: 10px 20px;
+  max-width: 930px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Navigazione */
+
+.back-link a {
+  color: red;
+  text-decoration: none;
+}
+.back-link a:hover,
+.back-link a:focus {
+  text-decoration: none;
+}
+h1 {
+  /*height: 100%;*/
+  /* The html and body elements cannot have any padding or margin. */
+  margin: 0;
+  margin-bottom: 3px;
+  line-height: 1.2em;
+}
+h1.entry-title {
+  font-size: 24px;
+  margin: 0;
+  float: left;
+  text-align: center;
+}
+h1.entry-title a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.18em;
+}
+
+.entry-title .logo-unotre {
+  background: url('../img/logo-unotre-2x.png') no-repeat;
+  width: 60px;
+  height: 25px;
+  background-size: 60px auto;
+  background-position: 0 4px;
+}
+.entry-title .sep {
+  background: url('../img/sep-2x.png') no-repeat center 3px;
+  width: 7px;
+  height: 22px;
+  background-size: 5px auto;
+}
+.entry-title .logo {
+  display: inline-block;
+  width: 135px;
+  height: 25px;
+  background-size: 135px auto;
+  background-position: 0 7px;
+}
+.entry-title a.logo-unotre, .entry-title .logo,
+.entry-title span,
+.nav-facebook a, .nav-twitter a {
+  display: inline-block;
+  text-align: left;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-right: 3px;
+  margin-top: 0;
+}
+.nav-facebook a {
+  background: url('../img/icon-facebook.png') no-repeat center center;
+  width: 20px;
+  height: 27px;
+}
+.nav-twitter a {
+  background: url('../img/icon-twitter.png') no-repeat center center;
+  width: 20px;
+  height: 27px;
+}
+.entry-header .inner {
+  text-align: left;
+  margin: 10px auto;
+  width: 95%;
+  height: 27px;
+}
+.entry-header {
+  background: #000;
+  width:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999
+}
+.entry-header .back-link {
+  float: right;
+}
+
+:focus {
+  outline: none;
+}
+
+footer {
+  z-index: 9999;
+  position: relative;
+  text-align: center;
+}
+footer .foot {
+  height: 300px;
+  color: #fff;
+  font-size: 14px;
+  padding: 50px 50px 10px;
+}
+footer .logo-unotre a {
+  background: url('../img/logo-unotre.png') no-repeat center center;
+  width: 182px;
+  height: 58px;
+  display: block;
+  text-indent:-9999px;
+  text-align: left;
+  overflow: hidden;
+  margin: 30px auto 0;
+}
+
+footer .btn-social {
+  text-align: center;
+}
+
+footer .btn-social a {
+  background: white;
+  display: block;
+  width: 200px;
+  margin: 0 auto 15px;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer .credits {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin: 30px 0;
+}
+
+footer .credits a {
+  color: #FFF;
+}
+
+.footer-container {
+  background: #000;
+}
+
+
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+
+@media only screen and (min-width: 375px) {
+  /* ====================
+  iPhone 6
+  ==================== */
+
+  .entry-title .logo-unotre {
+    background: url('../img/logo-unotre-2x.png') no-repeat;
+    width: 75px;
+    height: 25px;
+    background-size: 75px auto;
+    background-position: 0 2px;
+  }
+  .entry-title .sep {
+    background: url('../img/sep-2x.png') no-repeat center 0px;
+    width: 7px;
+    height: 22px;
+    background-size: 7px auto;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  /* ====================
+  INTERMEDIATE: Main
+  ==================== */
+
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .wrapper article {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+
+  /* ====================
+  INTERMEDIATE: Menu
+  ==================== */
+
+  nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    margin-bottom: 0;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+  /* ========================
+  INTERMEDIATE: IE Fixes
+  ======================== */
+
+  nav ul li {
+    display: inline;
+  }
+
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+
+  /* ==========================================================================
+  INTERMEDIATE: Author's custom styles
+  ========================================================================== */
+
+  .main h2 {
+    font-size: 3em;
+  }
+
+  .arrow-wrap {
+    width:3vw;
+    height:1.5vw;
+  }
+
+  #title {
+  }
+
+  #title img {
+  }
+
+  .slideshow .slideshow-element-outer {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .wide img {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .browserupgrade div p {
+    width: 400px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* ====================
+  WIDE: CSS3 Effects
+  ==================== */
+
+  .header-container,
+  .main aside {
+  }
+
+  /* ============
+  WIDE: Menu
+  ============ */
+
+  .title {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+  /* ============
+  WIDE: Main
+  ============ */
+
+  .main {
+    text-align: center;
+  }
+
+  #title {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .main article {
+    /*float: left;*/
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+  }
+
+  .main aside {
+    float: right;
+    width: 28%;
+    text-align: left;
+  }
+
+  /* ==========================================================================
+  WIDE: Author's custom styles
+  ========================================================================== */
+
+  #navigation {
+    position: relative; left: 50%; float: left;
+  }
+
+  #navigation ul {
+    position: relative; left: -50%; float: left;
+  }
+
+  .main article header, .main article section {
+    padding: 18px 30px;
+    margin: 30px 0;
+  }
+
+  header.black.big {
+    width: 400px;
+    font-size: 1.5em;
+    height: 220px;
+  }
+
+  header.black {
+    width: 600px;
+    height: 230px;
+  }
+
+  .main {
+    padding: 30px 0 0;
+  }
+
+  .main article h1 {
+    font-size: 2.5em;
+  }
+
+  .entry-title .logo-unotre {
+    width: 120px;
+    height: 25px;
+    background-size: 120px auto;
+    background-position: 0 -5px;
+  }
+
+  .entry-title .logo {
+    width: 250px;
+    height: 25px;
+    background-size: 250px auto;
+    background-position: 0 2px;
+  }
+
+  .slideshow .slideshow-element-outer {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px;
+  }
+
+  .slideshow .slideshow-element-text {
+    margin: 15px 20px 30px;
+  }
+
+  .slideshow .slideshow-element-text h2 span.slideshow-element-number {
+  }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+  /* ===============
+  Maximal Width
+  =============== */
+
+  .wrapper {
+    width: 100%; /* 1026px with 10% for margins */
+    margin: 0 auto;
+  }
+
+  /* ==========================================================================
+  MAXIMAL: Author's custom styles
+  ========================================================================== */
+
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .main article p {
+    font-size: 1.2em;
+  }
+
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ==========================================================================
+Print styles
+========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* ==========================================================================
+Retina specific styles
+========================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+
+  .nav-facebook a {
+    background-image: url('../img/icon-facebook-2x.png');
+    background-size: 20px 20px;
+  }
+  .nav-twitter a {
+    background-image: url('../img/icon-twitter-2x.png');
+    background-size: 20px 20px;
+  }
+
+  #share-btns .logo-unotre {
+    background-image: url('../img/logo-unotre-2x.png');
+    background-size: 182px 58px;
+  }
+
+}
