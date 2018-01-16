@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5 {
 #content {
   clear: both;
   position: relative;
-  padding: 10vh 0 2vh;
+  padding: 5vh 0 2vh;
 }
 
 .panino {
@@ -437,7 +437,6 @@ h1, h2, h3, h4, h5 {
 .main article#cta #formpartecipa {
   margin-top: 15px;
   margin-bottom: 20px;
-  background: #f3f3f3;
 }
 
 
@@ -619,7 +618,7 @@ article header, article section {
   color: white;
   font-size: 1.25em;
   position: absolute;
-  width: 100px;
+  width: 110px;
   text-align: right;
   right: 20px;
   top: 40px;
@@ -933,13 +932,14 @@ Media Queries
 
   .back-link a {
     font-size: 1.6em;
-    width: 130px;
+    width: 135px;
     right: 40px;
     top: 60px;
   }
 
   .main article#cta #formpartecipa {
     padding: 10px 15px;
+    background: #f3f3f3;
   }
 
   .main article#cta section {
