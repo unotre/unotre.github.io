@@ -505,7 +505,7 @@ h1, h2, h3, h4, h5 {
 
 .main #buttoncontatta {
   display: block;
-  width: 100%;
+  width: 90%;
   margin: 15px 0;
   padding: 10px 15px;
   background-color: #eb1c23;
@@ -596,7 +596,7 @@ header.black {
 }
 
 article header, article section {
-  padding: 10px 15px 5px;
+  padding: 10px 15px 15px;
   margin: 0;
 }
 
@@ -617,12 +617,12 @@ article header, article section {
 .back-link a {
   display: block;
   color: white;
-  font-size: 1.6em;
+  font-size: 1.25em;
   position: absolute;
-  width: 130px;
+  width: 100px;
   text-align: right;
-  right: 40px;
-  top: 60px;
+  right: 20px;
+  top: 40px;
   text-align: center;
   text-decoration: none;
   border-bottom: 2px solid white;
@@ -929,6 +929,13 @@ Media Queries
     height: 120px;
     background-size: 120px auto;
     background-position: 0 0;
+  }
+
+  .back-link a {
+    font-size: 1.6em;
+    width: 130px;
+    right: 40px;
+    top: 60px;
   }
 
   .main article#cta #formpartecipa {
