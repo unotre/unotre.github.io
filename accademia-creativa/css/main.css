@@ -363,7 +363,8 @@ h1, h2, h3, h4, h5 {
   background: #76383a;
 }
 
-.carne h2 {
+.carne a {
+  border: none;
 }
 
 .layer {
@@ -505,7 +506,6 @@ h1, h2, h3, h4, h5 {
 .main #buttoncontatta {
   display: block;
   width: 100%;
-  max-width: 400px;
   margin: 15px 0;
   padding: 10px 15px;
   background-color: #eb1c23;
