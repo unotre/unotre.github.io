@@ -14,29 +14,56 @@ $(document).ready(function(){
     }
   });
 
-  enable_cb();
-  $("#relatore").click(enable_cb);
+  checkbox_relatore();
+  $("#relatore").click(checkbox_relatore);
+
+  $("#buttonpartecipa").click(click_partecipa) ;
+  $("#buttoncontatta").click(click_contatta) ;
 
   window.addEventListener("message", function(event) {
-    console.log("Hello from " + event.data);
     form_submitted(event.data);
   });
 
+  // Inizializza i form
+  init_mf_form("mf_placeholder");
+
 });
 
-function enable_cb() {
+function checkbox_relatore() {
   if (this.checked) {
     $("#step2").removeClass("disabled");
-    $("#formpartecipa").removeClass("hidden");
+    $("#buttonpartecipa").removeClass("hidden");
+    $("#qualilavori").removeClass("hidden");
+    $("#nonconosco").addClass("hidden");
+
   } else {
     $("#step2").addClass("disabled");
+    $("#buttonpartecipa").addClass("hidden");
+    $("#qualilavori").addClass("hidden");
+    $("#nonconosco").removeClass("hidden");
+    $("#buttonpartecipa").addClass("hidden");
+    $("#qualilavori").addClass("hidden");
     $("#formpartecipa").addClass("hidden");
   }
 }
 
+function click_partecipa() {
+  $("#buttonpartecipa").addClass("hidden");
+  $("#qualilavori").addClass("hidden");
+  $("#formpartecipa").removeClass("hidden");
+  return false;
+}
+
+function click_contatta() {
+  $("#buttoncontatta").addClass("hidden");
+  $("#formcontatta").removeClass("hidden");
+  return false;
+}
+
 function form_submitted(param) {
-  console.log("Ciao corradinnnnyyy: " + param);
   if (param == "form_submitted" ) {
     $("#step3").removeClass("disabled");
+    $("#formpartecipa").delay(3000).fadeOut(400);
+    $("#lotrovato").addClass("hidden");
   }
 }

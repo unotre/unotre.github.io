@@ -45,6 +45,9 @@
       <header id="header" class="entry-header">
         <div class="inner">
           <h1 class="entry-title"><a target="_blank" class="logo-unotre" href="http://www.unotre.club">Club degli Amici di UNOTRE</a></h1>
+          <div class="back-link">
+            <a href="/" id="chisiamo">Chi siamo</a>
+          </div>
         </div>
       </header>
 
@@ -72,23 +75,22 @@
               <h3>Fatti raccomandare e partecipa alla selezione.</h3>
 
               <ol>
-                <li>Trova un socio del Club che ti raccomandi
-                  <label class="container">L'ho trovato!
+                <li><h5>Trova un socio del Club che ti raccomandi</h5>
+                  <label id="lotrovato" class="container">L'ho trovato!
                     <input id="relatore" type="checkbox">
                     <span class="checkmark"></span>
                   </label>
-                  <smalL><a href="#faq">Non conosco nessun socio del Club :(</a></small>
+                  <small id="nonconosco"><a href="#faq">Non conosco nessun socio del Club :(</a></small>
                 </li>
-                <li id="step2" class="disabled">Invia tutto il materiale <strong>entro il 15/2/2018</strong>
+                <li id="step2" class="disabled"><h5>Invia tutto il materiale entro il 15/2/2018</h5>
+                  <a href="#" id="buttonpartecipa" class="hidden">Carica</a>
+                  <small id="qualilavori" class="hidden"><a href="#faq">Quali lavori sono ammissibili?</a></small>
                   <div id="formpartecipa" class="hidden">
                     <div id="mf_placeholder"
                          data-formurl="http://forms.cubica.eu/embed.php?id=19679"
-                         data-formheight="472"
+                         data-formheight="800"
                          data-paddingbottom="10">
                     </div>
-                    <script type="text/javascript" src="http://forms.cubica.eu/js/jquery.min.js"></script>
-                    <script type="text/javascript" src="http://forms.cubica.eu/js/jquery.ba-postmessage.min.js"></script>
-                    <script type="text/javascript" src="http://forms.cubica.eu/js/machform_loader.js"></script>
                   </div>
 
                   <div class="hidden">
@@ -98,70 +100,96 @@
                     </label>
                   </div>
                 </li>
-                <li id="step3" class="disabled">Aspetta la selezione</li>
+                <li id="step3" class="disabled"><h5>Aspetta la selezione!</h5></li>
               </ol>
-              <p><a href="#faq">Domande frequenti</a></p>
             </section>
           </article>
 
-          <article>
-            <section>
-              <h2>La selezione</h2>
-              <p>I lavori saranno valutati e selezionati dalla giuria nei giorni successivi al termine di consegna.</p>
-              <p>La giuria di Accademia Creativa è composta da soci del Club che esprimeranno le proprie preferenze tra i progetti presentati, con l’esplicito divieto di votare per i progetti dei propri candidati.</p>
-              <p>I migliori progetti saranno esposti a marzo 2018 a Milano. Il progetto più meritevole sarà proclamato all’inaugurazione dell’esposizione.</p>
-            </section>
-          </article>
 
-          <article>
-            <section>
-              <h2>Il giovane meritevole</h2>
-              <p>Il giovane che avrà presentato il lavoro più meritevole riceverà dallo sponsor dell’iniziativa un contributo fino a 1.000€ da impiegare per la realizzazione del suo prossimo progetto.</p>
-              <p>Il relatore del giovane meritevole riceverà una preziosa targa commemorativa da appendere o appoggiare in bella vista.</p>
-            </section>
-          </article>
+          <div class="panino">
+            <article>
+              <section>
+                <h2>La selezione</h2>
+                <p>I lavori saranno valutati e selezionati dalla giuria nei giorni successivi al termine di consegna.</p>
+                <p>La giuria di Accademia Creativa è composta da soci del Club che esprimeranno le proprie preferenze tra i progetti presentati, con l’esplicito divieto di votare per i progetti dei propri candidati.</p>
+                <p>I migliori progetti saranno esposti a marzo 2018 a Milano. Il progetto più meritevole sarà proclamato all’inaugurazione dell’esposizione.</p>
+              </section>
+            </article>
+          </div>
 
-          <article>
-            <section>
-              <h2>Aggiornamenti</h2>
-              <p>Se vuoi aggiornamenti su Accademia Creativa iscriviti alla newsletter:</p>
-              <p>[Form di iscrizione]</p>
-            </section>
-          </article>
+          <div class="insalata">
+            <article>
+              <section>
+                <h2>Il giovane meritevole</h2>
+                <p>Il giovane che avrà presentato il lavoro più meritevole riceverà dallo sponsor dell’iniziativa un contributo fino a 1.000€ da impiegare per la realizzazione del suo prossimo progetto.</p>
+                <p>Il relatore del giovane meritevole riceverà una preziosa targa commemorativa da appendere o appoggiare in bella vista.</p>
+              </section>
+            </article>
+          </div>
 
-          <article id="faq">
-            <section>
-              <h2>Domande & risposte</h2>
-              <h5>Non conosco nessun socio del Club: come posso partecipare?</h5>
-              <p>C’è una possibilità anche per te: cerca di catturare l’attenzione e l’interesse di un socio inviando un messaggio di presentazione. Se ti presenti nel modo giusto qualcuno sicuramente ti risponderà.</p>
-              <a href="#" class="button">Contatta i soci del Club per trovare un relatore</a>
-              <h5>Cosa si intende per giovane con delle idee?</h5>
-              <p>Parliamo di giovani che hanno meno di 25 anni. E che hanno delle idee ma che oltre a pensare le cose poi le realizzano anche.</p>
-              <h5>Lavori ammissibili</h5>
-              <p>Puoi presentare qualunque cosa sia opera del tuo ingegno e che sia materialmente presentabile e fruibile. Può essere un progetto, un’opera compiuta (o incompiuta se sei coraggioso), un oggetto o anche foto / video /  disegni / rendering / descrizioni che lo rappresentino. All’Accademia Creativa puoi presentare un software, una canzone, un medicinale, un utensile, una foto, una piece teatrale ecc.</p>
-              <p>Le regole da rispettare:</p>
-              <ul>
-                <li>Devi consegnare qualcosa che permetta alla giuria di giudicare il tuo lavoro.</li>
-                <li>Lo devi aver fatto da solo, o con un gruppo di persone giovani che siano d’accordo con te a partecipare all’iniziativa.</li>
-              </ul>
-              <h5>Cosa farete con il mio lavoro?</h5>
-              <p>Niente che tu non voglia. Ti chiediamo subito l’autorizzazione per esporlo e divulgare il materiale che presenti sui canali dello sponsor UNOTRE (il sito unotre.com e i canali social), ti chiediamo inoltre di concedere a titolo gratuito al Club i diritti per riprodurre i tuoi lavori in un eventuale catalogo dell’esposizione.</p>
-              <h5>Consigli</h5>
-              <p>Prima di presentare il tuo lavoro cerca di farti aiutare dal tuo relatore. I soci del Club sono sempre molto occupati ma sono anche disponibili a dare un consiglio se possono.</p>
-            </section>
-          </article>
+          <div class="pomodoro">
+            <article>
+              <section>
+                <h2>Aggiornamenti</h2>
+                <p>Se vuoi aggiornamenti su Accademia Creativa iscriviti alla newsletter:</p>
+                <p>
+                  <iframe height="200" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="http://forms.cubica.eu/embed.php?id=20633" title="Accademia Creativa - iscrizione alla newsletter"><a href="http://forms.cubica.eu/view.php?id=20633" title="Accademia Creativa - iscrizione alla newsletter">Accademia Creativa - iscrizione alla newsletter</a></iframe>
+                </p>
+              </section>
+            </article>
+          </div>
 
-          <article>
-            <section>
-              <h2>Sponsor</h2>
-              <p>Main sponsor:<br/><img width="50%" height="auto" src="img/logo-unotre-black.png" alt="UNOTRE" /></p>
-            </section>
-          </article>
+          <div class="sottiletta">
+            <article id="faq">
+              <section>
+                <h2>Domande & risposte</h2>
+                <h5>Non conosco nessun socio del Club: come posso partecipare?</h5>
+                <p>C’è una possibilità anche per te: cerca di catturare l’attenzione e l’interesse di un socio inviando un messaggio di presentazione. Se ti presenti nel modo giusto qualcuno sicuramente ti risponderà.</p>
+                <a href="#" class="button" id="buttoncontatta">Contatta i soci del Club per trovare un relatore</a>
+                <div id="formcontatta" class="hidden">
+                  <iframe height="734" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="http://forms.cubica.eu/embed.php?id=20244" title="Accademia Creativa - cerca un relatore"><a href="http://forms.cubica.eu/view.php?id=20244" title="Accademia Creativa - cerca un relatore">Accademia Creativa - cerca un relatore</a></iframe>
+                </div>
+                <h5>Cosa si intende per giovane con delle idee?</h5>
+                <p>Parliamo di giovani che sono nati nel 1991 o dopo. E che hanno delle idee ma che oltre a pensare le cose poi le realizzano anche.</p>
+                <h5>Lavori ammissibili</h5>
+                <p>Puoi presentare qualunque cosa sia opera del tuo ingegno e che sia materialmente presentabile e fruibile. Può essere un progetto, un’opera compiuta (o incompiuta se sei coraggioso), un oggetto o anche foto / video /  disegni / rendering / descrizioni che lo rappresentino. All’Accademia Creativa puoi presentare un software, una canzone, un medicinale, un utensile, una foto, una piece teatrale ecc.</p>
+                <p>Le regole da rispettare:</p>
+                <ul>
+                  <li><p>Devi consegnare qualcosa che permetta alla giuria di giudicare il tuo lavoro.</p></li>
+                  <li><p>Lo devi aver fatto da solo, o con un gruppo di persone giovani che siano d’accordo con te a partecipare all’iniziativa.</p></li>
+                </ul>
+                <h5>Cosa farete con il mio lavoro?</h5>
+                <p>Niente che tu non voglia. Ti chiediamo subito l’autorizzazione per esporlo e divulgare il materiale che presenti sui canali dello sponsor UNOTRE (il sito unotre.com e i canali social), ti chiediamo inoltre di concedere a titolo gratuito al Club i diritti per riprodurre i tuoi lavori in un eventuale catalogo dell’esposizione.</p>
+                <h5>Consigli</h5>
+                <p>Prima di presentare il tuo lavoro cerca di farti aiutare dal tuo relatore. I soci del Club sono sempre molto occupati ma sono anche disponibili a dare un consiglio se possono.</p>
+              </section>
+            </article>
+          </div>
 
-          <p>&nbsp;</p>
+          <div class="carne">
+            <article>
+              <section>
+                <h2>Sponsor</h2>
+                <p>Main sponsor:<br/><img width="50%" height="auto" src="img/logo-unotre-black.png" alt="UNOTRE" /></p>
+              </section>
+            </article>
+          </div>
+
+          <div class="panino">
+            <article>
+              <section>
+                <h2>Contatti</h2>
+                <p>Informazioni generali: <a href="mailto:info@unotre.club">info@unotre.club</a></p>
+              </section>
+            </article>
+          </div>
 
         </div> <!-- #main -->
       </div> <!-- #main-container -->
+
+      <script type="text/javascript" src="http://forms.cubica.eu/js/jquery.min.js"></script>
+      <script type="text/javascript" src="http://forms.cubica.eu/js/jquery.ba-postmessage.min.js"></script>
+      <script type="text/javascript" src="http://forms.cubica.eu/js/machform_loader.js"></script>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

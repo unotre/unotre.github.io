@@ -88,7 +88,7 @@ body {
 h1, h2, h3, h4, h5 {
   letter-spacing: normal;
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 1000;
+  font-weight: bolder;
   letter-spacing: -0.02em;
   line-height: 100%;
 }
@@ -304,9 +304,10 @@ html {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #000;
   font-weight: bold;
+  border-bottom: 2px solid black;
 }
 
 .main-container {
@@ -323,6 +324,11 @@ li {
   margin-bottom: 10px;
 }
 
+li small {
+  display: block;
+  margin-bottom: 25px;
+}
+
 h1, h2, h3, h4, h5 {
   color: #000;
 }
@@ -331,40 +337,33 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-#navigation {
-  margin: 20px auto;
-}
-
-#navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
-#navigation ul li {
-  display: inline-block;
-  float: left;
-  text-align: center;
-  margin: 0 10px 15px 0;
-}
-
-#navigation ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  background: #fff;
-  color: #000;
-  border-radius: 4px;
-  padding: 3px 10px 0;
-  font-size: 1.3em;
-}
-
-#navigation ul li a.selected {
-  background: #666;
-}
-
 #content {
   clear: both;
   position: relative;
   padding: 10vh 0 2vh;
+}
+
+.panino {
+  background: #ffca4e;
+}
+
+.insalata {
+  background: #00a451;
+}
+
+.pomodoro {
+  background: #eb1c23;
+}
+
+.sottiletta {
+  background: #fff000;
+}
+
+.carne {
+  background: #76383a;
+}
+
+.carne h2 {
 }
 
 .layer {
@@ -409,6 +408,7 @@ h1, h2, h3, h4, h5 {
 
 .main article#cta {
   margin-top: 40px;
+  margin-bottom: 60px;
   border: 4px solid black;
   background: white;
 }
@@ -417,8 +417,26 @@ h1, h2, h3, h4, h5 {
   margin: 10px 0;
 }
 
+.main article#cta h3 {
+  margin-bottom: 30px;
+}
+
+.main article#cta #buttonpartecipa {
+  display: block;
+  width: 130px;
+  margin: 15px 0;
+  padding: 10px 15px;
+  background-color: #eb1c23;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: none;
+  text-align: center;
+}
+
 .main article#cta #formpartecipa {
-  margin-left: -15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: #f3f3f3;
 }
 
 
@@ -482,6 +500,23 @@ h1, h2, h3, h4, h5 {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.main #buttoncontatta {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px 0;
+  padding: 10px 15px;
+  background-color: #eb1c23;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: none;
+  text-align: center;
+}
+
+.main #formcontatta {
+  background: #ebdd00;
 }
 
 h5.subtitle {
@@ -580,12 +615,17 @@ article header, article section {
 /* Navigazione */
 
 .back-link a {
-  color: red;
+  display: block;
+  color: white;
+  font-size: 1.6em;
+  position: absolute;
+  width: 130px;
+  text-align: right;
+  right: 40px;
+  top: 60px;
+  text-align: center;
   text-decoration: none;
-}
-.back-link a:hover,
-.back-link a:focus {
-  text-decoration: none;
+  border-bottom: 2px solid white;
 }
 h1 {
   /*height: 100%;*/
@@ -851,12 +891,9 @@ Media Queries
     font-size: 4em;
   }
 
-  #navigation {
-    position: relative; left: 50%; float: left;
-  }
-
-  #navigation ul {
-    position: relative; left: -50%; float: left;
+  #content, #content section {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .main article header, .main article section {
@@ -892,6 +929,18 @@ Media Queries
     height: 120px;
     background-size: 120px auto;
     background-position: 0 0;
+  }
+
+  .main article#cta #formpartecipa {
+    padding: 10px 15px;
+  }
+
+  .main article#cta section {
+    margin-top: 0;
+  }
+
+  .main #formcontatta {
+    padding: 10px 15px;
   }
 
   .slideshow .slideshow-element-outer {
