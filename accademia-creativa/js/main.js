@@ -24,9 +24,6 @@ $(document).ready(function(){
     form_submitted(event.data);
   });
 
-  // Inizializza i form
-  init_mf_form("mf_placeholder");
-
 });
 
 function checkbox_relatore() {
