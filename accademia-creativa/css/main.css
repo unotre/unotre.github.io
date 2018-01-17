@@ -894,7 +894,7 @@ Media Queries
   }
 
   .insalata {
-    background: #00a451 url('../img/insalata-bg.png') no-repeat top left;
+    background: #00a451 url('../img/insalata-bg.png') no-repeat top right;
     background-size: contain;
   }
 
