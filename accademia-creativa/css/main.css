@@ -812,18 +812,6 @@ Media Queries
     height:1.5vw;
   }
 
-  #title {
-    background: url('../img/content-bg.png') no-repeat bottom left;
-  }
-
-  .insalata {
-    background: #00a451 url('../img/insalata-bg.png') no-repeat top left;
-  }
-
-  .sottiletta {
-    background: #fff000 url('../img/sottiletta-bg.png') no-repeat center center;
-  }
-
   .slideshow .slideshow-element-outer {
     width: 100%;
     max-width: 500px;
@@ -898,6 +886,21 @@ Media Queries
   #content, #content section {
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  #title {
+    background: url('../img/content-bg.png') no-repeat bottom left;
+    background-size: contain;
+  }
+
+  .insalata {
+    background: #00a451 url('../img/insalata-bg.png') no-repeat top left;
+    background-size: contain;
+  }
+
+  .sottiletta {
+    background: #fff000 url('../img/sottiletta-bg.png') no-repeat center left;
+    background-size: contain;
   }
 
   .main article header, .main article section {
