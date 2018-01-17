@@ -337,9 +337,10 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
+#title {
+}
+
 #content {
-  clear: both;
-  position: relative;
   padding: 5vh 0 2vh;
 }
 
@@ -812,9 +813,15 @@ Media Queries
   }
 
   #title {
+    background: url('../img/content-bg.png') no-repeat bottom left;
   }
 
-  #title img {
+  .insalata {
+    background: #00a451 url('../img/insalata-bg.png') no-repeat top left;
+  }
+
+  .sottiletta {
+    background: #fff000 url('../img/sottiletta-bg.png') no-repeat center center;
   }
 
   .slideshow .slideshow-element-outer {
@@ -865,8 +872,6 @@ Media Queries
   }
 
   #title {
-    width: 50%;
-    margin: 0 auto;
   }
 
   .main article {

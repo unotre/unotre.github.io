@@ -5,21 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
 
-      <script type="text/javascript">
-        WebFontConfig = {
-          google: { families: [ 'Teko::latin' ] }
-        };
-        (function() {
-          var wf = document.createElement('script');
-          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-          wf.type = 'text/javascript';
-          wf.async = 'true';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(wf, s);
-        })(); </script>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=1">
         <title>Club degli Amici di UNOTRE</title>
         <meta name="description" content="L'Associazione più stilosa che c'è.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +20,6 @@
         <meta property="og:description" content="L'Associazione più stilosa che c'è." />
         <meta property="og:image" content="http://www.unotre.club/img/social.png?v=2" />
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@unotre">
         <meta name="twitter:title" content="Club degli Amici di UNOTRE">
         <meta name="twitter:description" content="L'Associazione più stilosa che c'è.">
         <meta name="twitter:image:src" content="http://www.unotre.club/img/social.png">
@@ -43,11 +30,10 @@
         <link rel="stylesheet" href="css/slick-theme.css?v=6">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css?v=11">
+        <link rel="stylesheet" href="css/main.css?v=12">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-        <link rel="prefetch" href="https://fonts.googleapis.com/css?family=Teko">
         <link rel="prerender" href="http://www.unotre.club/">
 
     </head>
@@ -81,27 +67,31 @@
                 <div id="navigation">
                   <ul>
                     <li><a href="manifesto.html">Manifesto</a></li>
-                    <li><a href="mailto:info@unotre.club">Diventa socio</a></li>
-                    <li><a href="quota.html">Versa la quota</a></li>
+                    <li><a href="quota.html">Diventa socio</a></li>
+                    <li><a href="mailto:info@unotre.club">Contattaci</a></li>
                   </ul>
                 </div>
               </div>
             </section>
           </article>
 
+          <div class="slideshow">
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-1.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-2.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-10.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-4.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-5.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-6.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-7.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-8.jpg" width="auto" height="100%" /></a></div>
+            <div><a href="http://www.unotre.com/diario/" target="_blank"><img src="contents/slideshow/club-slideshow-9.jpg" width="auto" height="100%" /></a></div>
+          </div>
 
-          <img src="contents/unotreclub-paninoteca.jpg" width="100%" height="auto" />
+          <p class="dida">Immagini dal <strong>Diario del Club</strong>, un archivio <br/>di immagini dei soci su <a href="http://www.unotre.com/diario/" target="_blank">UNOTRE.com</a></p>
 
-          <article>
+          <article id="content">
             <section>
-              <p>Se com'è ovvio <strong>pensi che i membri del Club siano persone speciali che meritano il tuo supporto</strong> fai una <strong>donazione</strong>. Sicuramente ti tornerà indietro più di quanto hai donato.</p>
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="RSTERRFPEUPXQ">
-                <input type="image" src="contents/unotreclub-btn-dona.png" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
-                <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
-              </form>
-            </section>
+              <p>Il Club si propone di <strong>organizzare, promuovere e finanziare iniziative culturali, sociali e collaborative ideate e portate avanti dai propri soci</strong>.</p>
           </article>
 
         </div> <!-- #main -->
@@ -126,11 +116,12 @@
       <!--<script src="js/vendor/live.js"></script>-->
       <script src="js/vendor/jquery.js"></script>
       <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-      <!--<script src="js/slick.min.js"></script>
-      <script src="js/headroom.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/main.js?v=2"></script>
+      <!--<script src="js/headroom.min.js"></script>
       <script src="js/jquery.headroom.js"></script>
       <script src="js/jquery.unveil.js"></script>
-      <script src="js/main.js?v=2"></script>-->
+      -->
 
       <!-- Google Analytics -->
       <!-- Global Site Tag (gtag.js) - Google Analytics -->
