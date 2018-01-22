@@ -20,6 +20,10 @@ $(document).ready(function(){
   $("#buttonpartecipa").click(click_partecipa) ;
   $("#buttoncontatta").click(click_contatta) ;
 
+  window.addEventListener("message", function(event) {
+    form_submitted(event.data);
+  });
+
 });
 
 function checkbox_relatore() {
