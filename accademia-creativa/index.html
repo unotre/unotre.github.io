@@ -138,7 +138,11 @@
                     <a href="#" id="buttonpartecipa" class="hidden">Carica</a>
                     <small id="qualilavori" class="hidden"><a href="#faq">Quali lavori sono ammissibili?</a></small>
                     <div id="formpartecipa" class="hidden">
-                      <iframe onload="javascript:parent.scrollTo(0,0);" height="2026" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="http://forms.cubica.eu/embed.php?id=19679" title="Accademia Creativa - invio lavoro"><a href="http://forms.cubica.eu/view.php?id=19679" title="Accademia Creativa - invio lavoro">Accademia Creativa - invio lavoro</a></iframe>
+                      <div id="mf_placeholder"
+                           data-formurl="http://forms.cubica.eu/embed.php?id=19679"
+                           data-formheight="2600"
+                           data-paddingbottom="10">
+                      </div>
                     </div>
 
                     <div class="hidden">
@@ -234,6 +238,10 @@
 
         </div> <!-- #main -->
       </div> <!-- #main-container -->
+
+      <script type="text/javascript" src="http://forms.cubica.eu/js/jquery.min.js"></script>
+      <script type="text/javascript" src="http://forms.cubica.eu/js/jquery.ba-postmessage.min.js"></script>
+      <script type="text/javascript" src="js/machform_loader.js"></script>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
