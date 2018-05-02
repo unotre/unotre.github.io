@@ -631,6 +631,11 @@ header.black h1 {
   font-weight: bold;
 }
 
+#popup_partecipante .nav .disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 .white {
   background: #fff;
 }
@@ -1055,12 +1060,18 @@ Media Queries
   }
 
   #popup_partecipante {
-    width: 30vw;
+    width: 60vw;
   }
 
   #popup_partecipante img {
-    width: 100%;
+    width: 50%;
     height: auto;
+  }
+
+  #popup_partecipante .popup_partecipante_info {
+    width: 46%;
+    margin-left: 4%;
+    float: right;
   }
 
   #popup_partecipante .nav {

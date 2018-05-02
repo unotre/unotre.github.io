@@ -40,9 +40,9 @@ $(document).ready(function(){
       // Popola il popup con i tuoi dati
       $('#popup_partecipante img').attr('src', $(this).data('partecipante-workimage'));
       $('#popup_partecipante h2').text($(this).data('partecipante-name'));
-      $('#popup_partecipante p#popup_partecipante_bio').text($(this).data('partecipante-bio'));
+      $('#popup_partecipante p#popup_partecipante_bio').html($(this).data('partecipante-bio'));
       $('#popup_partecipante h3').text($(this).data('partecipante-title'));
-      $('#popup_partecipante p#popup_partecipante_workdesc').text($(this).data('partecipante-workdesc'));
+      $('#popup_partecipante p#popup_partecipante_workdesc').html($(this).data('partecipante-workdesc'));
       // Binda tasti previous / next solo se esiste un sibling adiacente
       $('#popup_partecipante').removeData('this_partecipante_prev');
       $('#popup_partecipante').data('this_partecipante_prev', $(this).prev());
@@ -55,18 +55,18 @@ $(document).ready(function(){
         $('#popup_partecipante #popup_partecipante_prev').on('click', (function() {
           $($('#popup_partecipante').data('this_partecipante_prev')).click();
         }));
-        $('#popup_partecipante #popup_partecipante_prev').show();
+        $('#popup_partecipante #popup_partecipante_prev').removeClass('disabled');
       } else {
-        $('#popup_partecipante #popup_partecipante_prev').hide();
+        $('#popup_partecipante #popup_partecipante_prev').addClass('disabled');
       };
       // Next
       if ($(this).next().hasClass('partecipante')) {
         $('#popup_partecipante #popup_partecipante_next').on('click', (function() {
           $($('#popup_partecipante').data('this_partecipante_next')).click();
         }));
-        $('#popup_partecipante #popup_partecipante_next').show();
+        $('#popup_partecipante #popup_partecipante_next').removeClass('disabled');
       } else {
-        $('#popup_partecipante #popup_partecipante_next').hide();
+        $('#popup_partecipante #popup_partecipante_next').addClass('disabled');
       };
       // Mostra il popup
       $('#popup_partecipante').popup('show');
