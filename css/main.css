@@ -360,6 +360,27 @@ h1, h2, h3, h4, h5 {
   padding: 2vh 0;
 }
 
+#accademia-creativa {
+  background: #FDE33F url('../img/content-bg.png') no-repeat bottom left;
+  background-size: contain;
+  color: black;
+}
+
+#accademia-creativa p {
+  display: block;
+  margin: 40px 0;
+}
+
+#accademia-creativa a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
 .layer {
 }
 
