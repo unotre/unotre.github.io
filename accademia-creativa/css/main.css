@@ -608,6 +608,11 @@ header.black h1 {
   -webkit-overflow-scrolling: touch;
 }
 
+#popup_partecipante_wrapper {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 #popup_partecipante img {
   width: 100%;
   height: auto;
