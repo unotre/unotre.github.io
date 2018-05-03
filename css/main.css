@@ -350,6 +350,11 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 0em;
 }
 
+#navigation ul li.giallo a {
+  background: #FDE33F;
+}
+
+
 #navigation ul li a.selected {
   background: #666;
 }
@@ -379,6 +384,7 @@ h1, h2, h3, h4, h5 {
   background: black;
   color: white;
   text-decoration: none;
+  border-radius: 6px;
 }
 
 .layer {
