@@ -604,6 +604,8 @@ header.black h1 {
 #popup_partecipante {
   width: 90vw;
   padding: 20px 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 #popup_partecipante img {
