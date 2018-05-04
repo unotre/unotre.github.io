@@ -1067,6 +1067,7 @@ Media Queries
 
   #popup_partecipante {
     width: 60vw;
+    overflow-y: auto;
   }
 
   #popup_partecipante img {
