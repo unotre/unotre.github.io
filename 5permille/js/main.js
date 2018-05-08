@@ -15,7 +15,7 @@ $(document).ready(function(){
   Quotation[5] = "Fai seguire i fatti <br/>alle dichiarazioni.";
   Quotation[6] = "Dichiarare <br/>con stile.";
   Quotation[7] = "Hai qualcosa <br/>da dichiarare!";
-  Quotation[8] = "Converti le tasse <br/>in classe.";
+  Quotation[8] = "Il cinque <br/>per millantare.";
   Quotation[9] = "Meno dichiarazioni, <br/>più azioni.";
   Quotation[10] = "La migliore <br/>destinazione.";
 
